@@ -115,6 +115,7 @@ jobs:
 
     # Clean up legacy images from ghcr.io
     - uses: actions/delete-package-versions@v4
+      if: github.event_name != 'pull_request'
       with:
         package-name: ${{ env.REPOSITORY_NAME }}
         package-type: 'container'
