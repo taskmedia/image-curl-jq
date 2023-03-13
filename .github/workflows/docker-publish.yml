@@ -119,5 +119,5 @@ jobs:
       with:
         package-name: ${{ env.REPOSITORY_NAME }}
         package-type: 'container'
-        min-versions-to-keep: 10
+        min-versions-to-keep: 100
         delete-only-untagged-versions: 'true'
